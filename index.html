@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./style/style.css">
     <title>Portfolio</title>
 </head>
+<!-- TODO: change Font Style to robot font -->
 
 <body>
     <!-- JavaScript Bundle with Popper -->
@@ -25,6 +26,7 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- TODO: href -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto w-100 justify-content-end">
                         <li class="nav-item">
@@ -36,12 +38,16 @@
 
                         <li class="nav-item">
                             <a class="nav-link " href="#" tabindex="-1">My Project</a>
-                        </li> 
-                         <li class="nav-item">
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link " href="#" tabindex="-1">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <button class="btn btn-outline-success" type="submit" id="resumeButton">My Resume</button>
+                            <!-- TODO:
+                                1- href
+                                2- hover effect 
+                             -->
+                            <button class="btn btn-primary w-auto resumeButton" href="" type="button">My Resume</button>
                         </li>
                     </ul>
                 </div>
@@ -50,7 +56,30 @@
     </header>
 
     <main>
+        <div class="container-fluid mh-100" id="heroImage">
+            <div class="row w-100 ">
+                <div class="col" style="margin-top:10rem;">
+                    <span class="h1" style="margin-left:25rem;">Hi, my name is Khalid</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="margin-top:1rem;">
+                    <span class="h5 d-flex" style="margin-left:25rem ;">I’m a software engineer specializing in
+                        building website </span>
+                </div>
+            </div>
+            <!-- TODO: 
+                1- href
+                2- hover effect
+              -->
+            <div class="row">
+                <div class="col" style="margin-top:1.5rem;">
+                    <a class="btn btn-primary resumeButton w-auto" href="#" role="button"
+                        style="margin-left:25rem;">Check my Skills</a>
+                </div>
+            </div>
 
+        </div>
     </main>
 
     <footer>

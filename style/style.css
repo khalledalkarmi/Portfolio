@@ -15,7 +15,7 @@ nav li {
     padding-top: 0.85rem;
 }
 
-#resumeButton {
+.resumeButton {
     margin-right: 50px;
     border-radius: 50px;
     width: 100px;
@@ -23,3 +23,13 @@ nav li {
     color: black;
     width: 8rem;
 }
+
+#heroImage{
+    height: 450px;
+    width: 100%;
+    background-color: #039BE5;
+}
+.vertical-center {
+    display: flex;
+    align-items: center;
+  }
