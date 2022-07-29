@@ -1,0 +1,25 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NavBar */
+nav ul {
+
+    height: 4rem;
+}
+
+nav li {
+    padding-top: 0.85rem;
+}
+
+#resumeButton {
+    margin-right: 50px;
+    border-radius: 50px;
+    width: 100px;
+    background-color: #63CCFF;
+    color: black;
+    width: 8rem;
+}
