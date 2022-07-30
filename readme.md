@@ -5,7 +5,7 @@ A Portfolio present my skills, my experiences and My Project.
 ##Live link to preview the portfolio in your browser
 [Portfolio](https://khalledalkarmi.github.io/Portfolio/)
 
-* This Portfolio using :
+* This Portfolio builded via :
   - HTML
   - CSS
   - Bootstrap 5
