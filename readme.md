@@ -11,7 +11,7 @@ A Portfolio present my skills, my experiences and My Project.
   - Bootstrap 5
 ##  Wireframe image:
 
-![Wirframe image](./images/WireFrame.png "Wirframe image ")
+![Wireframe image](./images/WireFrame.png "Wireframe image ")
 
 ##  Mockup image:
 
