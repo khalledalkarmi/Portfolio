@@ -8,47 +8,40 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="./style/style.css">
     <title>Portfolio</title>
 </head>
 <!-- TODO: change Font Style to robot font -->
 <!-- TODO: make the website responsive -->
 
-<body>
+<body class="bg-dark" style="font-family: 'Roboto';">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container-fluid ">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <!-- TODO: href -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto w-100 justify-content-end">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-50 justify-content-center">
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="#">About me</a>
+                            <a class="nav-link" aria-current="page" href="#aboutMe">About Me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Skills</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link " href="#" tabindex="-1">My Project</a>
+                            <a class="nav-link" href="#mySkills">My Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#" tabindex="-1">Contact</a>
+                            <a class="nav-link " href="#myProject">My Project</a>
                         </li>
                         <li class="nav-item">
-                            <!-- TODO:
-                                1- href
-                                2- hover effect 
-                             -->
-                            <button class="btn btn-primary w-auto resumeButton" href="" type="button">My Resume</button>
+                            <a class="nav-link " href="#contactMe">Contact Me</a>
                         </li>
                     </ul>
                 </div>
@@ -57,10 +50,10 @@
     </header>
 
     <main>
-        <div class="container mh-100 bg-black" style="color: aliceblue;">
+        <div class="container mh-100 bg-black" id="home" style="color: aliceblue;">
             <div class="row row-cols-auto">
                 <div class="col-lg-12 col-md-12 text-center" style="margin-top:10rem;">
-                    <span class="h1">Hi, my name is Khalid Al-Karmi</span>
+                    <span class="h1">Hi, my name is <span class="neonText"> Khalid Al-Karmi </span></span>
                 </div>
             </div>
             <div class="row">
@@ -70,12 +63,12 @@
                 </div>
             </div>
             <!-- TODO: 
-                1- href
                 2- hover effect
               -->
             <div class="row">
                 <div class="col text-center" style="margin-top:1.5rem;">
-                    <a class="btn btn-primary resumeButton w-auto m-5" href="#" role="button">Check my Skills</a>
+                    <a class="btn btn-primary resumeButton w-auto m-5" href="#mySkills" role="button">Check my
+                        Skills</a>
                 </div>
             </div>
         </div>
@@ -85,13 +78,15 @@
             <hr>
         </div>
         <div class="br-50"></div>
-        <div class="container text-center bg-black" style="color: aliceblue;">
+        <div class="container text-center bg-black" id="aboutMe" style="color: aliceblue;">
             <div class="row row-cols-auto">
-                <div class="col-lg-12 m-4"><span class="h3"> About Me
+                <div class="col-lg-12 m-lg-4 m-sm-0 col-md-12 col-sm-12"><span class="h3"> About Me
                     </span></div>
-                <div class="col-lg-6 col-md-12 "> <img src="./images/programmer.png" alt=""></div>
-                <div class="col-lg-6 col-md-12" style="padding-top:5rem; text-align: justify;">
-                    <p class="h5 w-50" style="margin-left: 5rem;">Hello! My name is Khalid and I enjoy web and Android
+                <div class="col-lg-6 col-md-12 col-sm-12 "> <img class="img-fluid " src="./images/programmer.png"
+                        alt=""></div>
+                <div class="col-lg-6 col-md-12 col-sm-12" style="padding-top:5rem; text-align: justify;">
+                    <p class="h5 w-50 m-sm-0 " style="margin-left: 5rem;">Hello! My name is Khalid and I enjoy web and
+                        Android
                         apps.
 
                         I started my journey back in 2014 when I helped my brother with his graduate project about
@@ -117,7 +112,7 @@
         </div>
         <div class="br-50"></div>
 
-        <div class="container text-center bg-black" style="color: aliceblue;">
+        <div class="container text-center bg-black" id="mySkills" style="color: aliceblue;">
             <div class="row row-cols-auto">
                 <div class="col-lg-12 m-4"><span class="h3"> My Skills
                     </span></div>
@@ -127,27 +122,21 @@
                         architecture using Spring Boot, MongoDB,
                         and Docker for deployment. </p>
                 </div>
-                <div class="col-lg-6 col-md-12 p-5">
-                    <p class="h5" style="margin-right: 30rem;">Java</p>
-                    <div class="progress mb-3 w-50">
-                        <div class="progress-bar " role="progressbar" aria-label="Basic example" aria-valuenow="0"
-                            aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-
-                    <p class="h5" style="margin-right: 30rem;">Java</p>
+                <div class="col-lg-6 col-md-12 col-sm-12 p-5">
+                    <p class="h5" style="margin-right: 30rem;">React</p>
                     <div class="progress mb-3">
                         <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 25%"
                             aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
 
-                    <p class="h5" style="margin-right: 30rem;">Java</p>
+                    <p class="h5" style="margin-right: 30rem;">Android</p>
                     <div class="progress mb-3">
                         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
                             aria-valuemax="100"></div>
                     </div>
 
-                    <p class="h5" style="margin-right: 30rem;">Java</p>
+                    <p class="h5" style="margin-right: 30rem;">Kotlin</p>
                     <div class="progress mb-3">
                         <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 75%"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
@@ -159,7 +148,7 @@
                             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12 p-5">
+                <div class="col-lg-4 col-md-12  col-sm-12 p-5">
                     <div class="card bg-primary" style="width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-title">Spring Boot</h5>
@@ -170,7 +159,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12 p-5">
+                <div class="col-lg-4 col-md-12  col-sm-12 p-5">
                     <div class="card bg-primary" style="width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-title">Android</h5>
@@ -181,7 +170,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12 p-5">
+                <div class="col-lg-4 col-md-12   col-sm-12 p-5">
                     <div class="card bg-primary" style="width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-title">React</h5>
@@ -200,17 +189,17 @@
         </div>
         <div class="br-50"></div>
 
-        <div class="container text-center bg-black" style="color: aliceblue;">
+        <div class="container text-center bg-black" id="myProject" style="color: aliceblue;">
             <div class="row row-cols-auto">
-                <div class="col-lg-12 m-4"><span class="h3"> About Me
+                <div class="col-lg-12 m-4 col-md-12 col-sm-12"><span class="h3"> My Project
                     </span></div>
-                <div class="col-lg-5 m-5">
+                <div class="col-lg-5 col-md-12 col-sm-12 m-lg-5 m-sm-0">
                     <div class="card mb-3 bg-primary" style="max-width: 540px;">
                         <div class="row g-0">
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-4">
                                 <img src="./images/android.png" class="img-fluid rounded-start" alt="...">
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-8 col-sm-8">
                                 <div class="card-body">
                                     <h5 class="card-title">Uni-Drive</h5>
                                     <p class="card-text">
@@ -218,19 +207,20 @@
                                         university students that aims to facilitate the process of going and
                                         returning from the university in the least time and cost.</p>
                                     <p class="card-text"><small class="text-dark">Last updated 3 mins ago</small></p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <a  href="https://github.com/khalledalkarmi/StudentDelivery" target="_blank"
+                                        class="btn  buttonHover">GitHub</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 m-5">
+                <div class="col-lg-5 col-md-12 col-sm-12 m-lg-5 m-sm-0">
                     <div class="card mb-3 bg-primary" style="max-width: 540px;">
                         <div class="row g-0">
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-4">
                                 <img src="./images/database-storage.png" class="img-fluid rounded-start" alt="...">
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-8  col-sm-8">
                                 <div class="card-body">
                                     <h5 class="card-title">Student delivery System</h5>
                                     <p class="card-text">
@@ -239,7 +229,8 @@
                                         implemented in Spring Boot framework and using NoSql database [MongoDB] with
                                         Docker deploying system </p>
                                     <p class="card-text"><small class="text-dark">Last updated 3 mins ago</small></p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <a href="https://github.com/khalledalkarmi/StudentDeliveryServer" target="_blank"
+                                        class="btn buttonHover">GitHub</a>
                                 </div>
                             </div>
                         </div>
@@ -247,10 +238,43 @@
                 </div>
             </div>
         </div>
+        <div class="br-50"></div>
+        <div class="hr">
+            <hr>
+        </div>
+        <div class="br-50"></div>
+        <div class="container text-center bg-black" id="contactMe" style="color: aliceblue;">
+            <div class="row row-cols-auto pb-5">
+                <div class="col-lg-12 col-md-12 col-sm-12 mb-sm-3 m-4"><span class="h3"> Get In Touch
+                    </span></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 mt-1 mb-sm-3 mb-lg-5">
+                    Although I’m currently looking for any new opportunities.
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 mb-sm-3"><a target="_blank"
+                        href="https://github.com/khalledalkarmi"><img class="bg-light" src="./images/github (1).png"
+                            style="width: 60px; border-radius: 100%;" alt=""></a></div>
+                <div class="col-lg-4 col-md-4 col-sm-12 mb-sm-3"><a target="_blank"
+                        href="https://www.linkedin.com/in/khalled-alkarmi/"><img class="bg-light"
+                            src="./images/linkedin-logo.png" style="width: 60px; border-radius: 100%;" alt=""></a></div>
+                <div class="col-lg-4 col-md-4 col-sm-12 mb-sm-3"><a target="_blank" href=""><img class="bg-light"
+                            src="./images/whatsapp.png" style="width: 60px; border-radius: 100%;" alt=""></a></div>
+            </div>
+        </div>
+        <div class="br-50"></div>
+        <div class="hr">
+            <hr>
+        </div>
+        <div class="br-50"></div>
     </main>
 
     <footer>
-
+        <div class="container text-center bg-black " style="color: aliceblue;">
+            <div class="row row-cols-auto pt-5 pb-5">
+                <div class="col-lg-4 col-md-4 col-sm-4"><a href="#home">Home</a></div>
+                <div class="col-lg-4 col-md-4 col-sm-4"><a href="#myProject">My Project</a></div>
+                <div class="col-lg-4 col-md-4 col-sm-4"><a href="#mySkills">My Skills</a></div>
+            </div>
+        </div>
     </footer>
 
 </body>
