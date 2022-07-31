@@ -22,13 +22,13 @@
 <!-- TODO: add custom padding and margin to bs5  -->
 <!-- TODO: add WhatsApp href  -->
 
-<body class="bg-dark" style="font-family: Audiowide, sans-serif;">
+<body class="bg-dark" style="font-family: Audiowide, sans-serif; ">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark ">
+        <nav class="navbar navbar-expand-lg" style="background-color:#6e83b7 ;" >
             <div class="container-fluid ">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -36,17 +36,17 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-50 justify-content-center">
-                        <li class="nav-item">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-center " >
+                        <li class="nav-item hoverSacle">
                             <a class="nav-link" aria-current="page" href="#aboutMe">About Me</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item hoverSacle">
                             <a class="nav-link" href="#mySkills">My Skills</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item hoverSacle">
                             <a class="nav-link " href="#myProject">My Project</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item hoverSacle">
                             <a class="nav-link " href="#contactMe">Contact Me</a>
                         </li>
                     </ul>
@@ -74,7 +74,7 @@
             <!-- TODO: hover effect -->
             <div class="row">
                 <div class="col text-center" style="margin-top:1.5rem;">
-                    <a class="btn btn-primary resumeButton w-auto m-5" href="#mySkills" role="button">Check my
+                    <a class="btn resumeButton w-auto m-5" href="#mySkills" role="button">Check my
                         Skills</a>
                 </div>
             </div>
@@ -85,26 +85,28 @@
             <hr>
         </div>
         <div class="br-50"></div>
-        <div class="container text-center bg-black" id="aboutMe" style="color: aliceblue;">
+        <div class="container bg-black" id="aboutMe" style="color: aliceblue; ">
             <div class="row row-cols-auto">
-                <div class="col-lg-12 m-lg-4 m-sm-0 col-md-12 col-sm-12"><span class="h3"> About Me
+                <div class="col-lg-12 m-lg-4 m-sm-0 col-md-12 col-sm-12 text-center"><span class="h3 "> About Me
                     </span></div>
                 <div class="col-lg-6 col-md-12 col-sm-12 "> <img class="img-fluid " src="./images/programmer.png"
                         alt=""></div>
-                <div class="col-lg-6 col-md-12 col-sm-12" style="padding-top:5rem; text-align: justify;">
-                    <p class="h5 w-50 m-sm-0 " style="margin-left: 5rem;">Hello! My name is Khalid and I develop web and
-                        Android
-                        apps.
-                        I started my journey back in 2014 when I helped my brother with his graduate project about
-                        Microcontroller and embedded systems in c/c++.
-                        I was a student HVAC system engineer at the time. Then I decided to shift my major and start
-                        studying computer science.
-                        Here are a few technologies I’ve been working with recently:
+                <div class="col-lg-6 col-md-12 col-sm-12" style="padding-top:5rem;">
+                    <p class="h5 w-50 m-sm-0 " style="margin-left: 5rem;">Hello! My name is Khalid and I'm a web
+                        and
+                        Android apps developer.
+                        I started my journey back in 2014 with Microcontroller and embedded systems in c/c++, then moved
+                        to android development with java and kotlin and now I'm front-end web
+                        developer.
+                        <br>
+                        I worked with several technologies:
                         <br>
                         <span class="h6">
+                            >>C\C++ <br>
                             >>Java <br>
                             >>Kotlin <br>
-                            >>Spring Boot
+                            >>Spring Boot <br>
+                            >> HTML\CSS
                         </span>
                     </p>
                     <div class="br-50"></div>
@@ -117,69 +119,65 @@
         </div>
         <div class="br-50"></div>
 
-        <div class="container text-center bg-black" id="mySkills" style="color: aliceblue;">
+        <div class="container text-center bg-black " id="mySkills" style="color: aliceblue;">
             <div class="row row-cols-auto">
-                <div class="col-lg-12 m-4"><span class="h3"> My Skills
-                    </span></div>
-                <div class="col-lg-6 col-md-12 p-5 mt-5" style="text-align: justify;">
-                    <p class="h6 text-center">
-                        I worked on Android native app development using Kotlin and java and server
-                        architecture using <span class="greenNeon"> Spring Boot </span>framework, NoSqlDB [MongoDB],
-                        and Docker for deployment. </p>
+                <div class="col-lg-12 col-md-12 col-sm-12 mt-4">
+                    <span class="h3 "> My Skills
+                    </span>
                 </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 p-5">
-                    <p class="h5" style="margin-right: 30rem;">React</p>
-                    <div class="progress mb-3">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                            aria-label="Basic example" style="width: 15%" aria-valuenow="15" aria-valuemin="0"
-                            aria-valuemax="100"></div>
-                    </div>
 
-                    <p class="h5" style="margin-right: 30rem;">Android</p>
-                    <div class="progress mb-3">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                            aria-label="Basic example" style="width: 55%" aria-valuenow="55" aria-valuemin="0"
-                            aria-valuemax="100"></div>
-                    </div>
-
-                    <p class="h5" style="margin-right: 30rem;">Kotlin</p>
-                    <div class="progress mb-3">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                            aria-label="Basic example" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
-                            aria-valuemax="100"></div>
-                    </div>
-
-                    <p class="h5" style="margin-right: 30rem;">Java</p>
-                    <div class="progress mb-3">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                            aria-label="Basic example" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
-                            aria-valuemax="100"></div>
-                    </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 p-lg-5 text-start">
+                    <div class="col-12 text-lg-start text-md-center text-sm-center mt-sm-3 mb-sm-2">Back-end</div>
+                    <p class="h6"> I am well-versed in Spring Boot Framework, building Full-REST
+                        api servers, design patterns [MVC], server architecture, working with non-relational databases
+                        such as MongoDB and Firebase, using
+                        Docker as a deployment system. <br>
+                        Good knowledged in Linux OS and familiar with Ubuntu servers.<br>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 p-lg-5 text-start">
+                    <div class="col-12 text-lg-start text-md-center text-sm-center mt-sm-3 mb-sm-2">Front-end</div>
+                    <p class="h6">I have strong knowledged in Kotlin for native android development, design
+                        pattern such as [MVVM, MVC], REST client library like Retrofit. <br>
+                        Good knowledged in HTML\CSS, Bootstrap 5 and react.
+                    </p>
+                </div>
+                <div class="col-12 mt-sm-3 mb-sm-2">
+                    <p class="text-center">
+                        Soft Skills <br>
+                    </p>
+                    <ul class="list-group-item">
+                        <li class="list-group-item">Good communication skills</li>
+                        <li class="list-group-item">Strong searching skills</li>
+                        <li class="list-group-item">Self taught</li>
+                        <li class="list-group-item">Good timing management</li>
+                        <li class="list-group-item">Team Work</li>
+                    </ul>
                 </div>
                 <div class="col-lg-4 col-md-12  col-sm-12 p-5">
-                    <div class="card bg-primary" style="width: 18rem;">
-                        <div class="card-body">
+                    <div class="card " style="width: 18rem;  background-color: #6e83b7;">
+                        <div class="card-body ">
                             <h5 class="card-title">Spring Boot</h5>
                             <h6 class="card-subtitle mb-2 text-muted neonText">Back-end</h6>
                             <p class="card-text">
-                                I work with Spring Boot to create high-end servers.
+                                I work with Spring Boot to create high-end Full-REST API servers.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12  col-sm-12 p-5">
-                    <div class="card bg-primary" style="width: 18rem;">
+                <div class="col-lg-4 col-md-12  col-sm-12  p-5">
+                    <div class="card " style="width: 18rem;  background-color: #6e83b7;">
                         <div class="card-body">
                             <h5 class="card-title">Android</h5>
                             <h6 class="card-subtitle mb-2 text-muted neonText">Full-stack</h6>
                             <p class="card-text">
-                                I use a variety of Android technologies to ensure that the app meets all requirements.
+                                I use a variety of Android technologies to ensure the app meets all requirements.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12   col-sm-12 p-5">
-                    <div class="card bg-primary" style="width: 18rem;">
+                <div class="col-lg-4 col-md-12 col-sm-12 p-5">
+                    <div class="card " style="width: 18rem;  background-color: #6e83b7;">
                         <div class="card-body">
                             <h5 class="card-title">React</h5>
                             <h6 class="card-subtitle mb-2 text-muted neonText">Front-end</h6>
@@ -197,23 +195,21 @@
         </div>
         <div class="br-50"></div>
 
-        <div class="container text-center bg-black" id="myProject" style="color: aliceblue;">
+        <div class="container  bg-black" id="myProject" style="color: aliceblue;">
             <div class="row row-cols-auto">
                 <div class="col-lg-12 m-4 col-md-12 col-sm-12"><span class="h3"> My Project
                     </span></div>
-                <div class="col-lg-5 col-md-12 col-sm-12 m-lg-5 m-sm-0">
-                    <div class="card mb-3 bg-primary" style="max-width: 540px;">
+                <div class="col-lg-3 col-md-12 col-sm-12 m-lg-5 m-sm-0">
+                    <div class="card mb-3 " style="max-width: 540px; background-color: #6e83b7;">
                         <div class="row g-0">
                             <div class="col-md-4 col-sm-4">
-                                <img src="./images/android.png" class="img-fluid rounded-start" alt="...">
+                                <img src="./images/UniDrivr.png" class="img-fluid rounded-start" alt="...">
                             </div>
                             <div class="col-md-8 col-sm-8">
                                 <div class="card-body">
                                     <h5 class="card-title">Uni-Drive</h5>
-                                    <p class="card-text">
-                                        Uni-Drive is an Android based ride-sharing software application for
-                                        university students that aims to facilitate the process of going and
-                                        returning from the university in the least time and cost.</p>
+                                    <p class="card-text h6">
+                                        Uni-Drive is an Android based ride-sharing application.</p>
                                     <p class="card-text"><small class="text-dark">Last updated 1 month ago</small></p>
                                     <a href="https://github.com/khalledalkarmi/StudentDelivery" target="_blank"
                                         class="btn  buttonHover">GitHub</a>
@@ -222,22 +218,41 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-12 col-sm-12 m-lg-5 m-sm-0">
-                    <div class="card mb-3 bg-primary" style="max-width: 540px;">
+                <div class="col-lg-3 col-md-12 col-sm-12 m-lg-5 m-sm-0">
+                    <div class="card mb-3" style="max-width: 540px;  background-color: #6e83b7;">
                         <div class="row g-0">
                             <div class="col-md-4 col-sm-4">
-                                <img src="./images/database-storage.png" class="img-fluid rounded-start" alt="...">
+                                <img src="./images/SpringBoot.png" class="img-fluid rounded-start" alt="...">
                             </div>
                             <div class="col-md-8  col-sm-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Student delivery System</h5>
-                                    <p class="card-text">
-                                        Student delivery System is full REST-API server designed to serve Uni-Driver
-                                        app,
-                                        implemented in Spring Boot framework and using NoSql database [MongoDB] with
-                                        Docker deploying system </p>
+                                    <h5 class="card-title">Ride-Share</h5>
+                                    <p class="card-text h6">
+                                        Full REST-API server
+                                        in Spring Boot, MongoDB and
+                                        Docker </p>
                                     <p class="card-text"><small class="text-dark">Last updated 8 month ago</small></p>
                                     <a href="https://github.com/khalledalkarmi/StudentDeliveryServer" target="_blank"
+                                        class="btn buttonHover">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-12 col-sm-12 m-lg-5 m-sm-0">
+                    <div class="card mb-3" style="max-width: 540px;  background-color: #6e83b7;">
+                        <div class="row g-0">
+                            <div class="col-md-4 col-sm-4">
+                                <img src="./images/Portfolio.png" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8  col-sm-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Portfolio</h5>
+                                    <p class="card-text h6">
+                                        Full responsive Portfolio website build with HTML\CSS </p>
+                                    <p class="card-text"><small class="text-dark">Last updated 1 day ago</small></p>
+                                    <a href="https://github.com/khalledalkarmi/Portfolio" target="_blank"
                                         class="btn buttonHover">GitHub</a>
                                 </div>
                             </div>
@@ -268,23 +283,17 @@
                             src="./images/whatsapp.png" style="width: 60px; border-radius: 100%;" alt=""></a></div>
             </div>
         </div>
-        <div class="br-50"></div>
-        <div class="hr">
-            <hr>
-        </div>
-        <div class="br-50"></div>
     </main>
-
-    <footer>
-        <div class="container text-center bg-black " style="color: aliceblue;">
-            <div class="row row-cols-auto pt-5 pb-5">
-                <div class="col-lg-4 col-md-4 col-sm-4"><a href="#home">Home</a></div>
-                <div class="col-lg-4 col-md-4 col-sm-4"><a href="#myProject">My Project</a></div>
-                <div class="col-lg-4 col-md-4 col-sm-4"><a href="#mySkills">My Skills</a></div>
-            </div>
-        </div>
-    </footer>
-
 </body>
 
 </html>
+
+<!-- TODO: navbar -->
+<!-- TODO: about me -->
+<!-- TODO: my skills -->
+<!-- TODO: my project -->
+
+<!--  <p class="h6 text-center">
+                        I worked on Android native app development using Kotlin and java and server
+                        architecture using <span class="greenNeon"> Spring Boot </span>framework, NoSqlDB [MongoDB],
+                        and Docker for deployment. </p> -->
