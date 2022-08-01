@@ -132,3 +132,8 @@ nav li {
 .hoverSacle:hover {
     transform: scale(1.1);
 }
+
+.linerColor {
+    background: rgb(82,71,237);
+    background: linear-gradient(90deg, rgba(82,71,237,1) 0%, rgba(110,131,183,1) 47%, rgba(112,111,247,1) 100%);
+}
