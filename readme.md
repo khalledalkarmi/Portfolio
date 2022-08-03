@@ -12,18 +12,10 @@ A Portfolio present my skills, my experiences and My Project.
 ##  Wireframe image:
 
 
-<<<<<<< HEAD
 ![Wireframe image](./images/Home.png "Wireframe image")
-=======
-![Wireframe image](./images/WireFrame.png "Wireframe image")
->>>>>>> e694437f47c2c3b0197b99076da2839be2b4d694
 
 ##  Mockup image:
 
 
-<<<<<<< HEAD
-![Mockup image](./images/homeMock.png "Mockup image")
-=======
-![Mockup image](./images/Mockup.png "Mockup image")
->>>>>>> e694437f47c2c3b0197b99076da2839be2b4d694
+![Mockup image](./images/HomeMockup.png "Mockup image")
 
