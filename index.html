@@ -12,7 +12,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
     <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Portfolio</title>
 </head>
@@ -24,13 +24,20 @@
 <!-- TODO: add custom padding and margin to bs5  -->
 <!-- TODO: add WhatsApp href  -->
 
-<body class="bg-dark" style="font-family: Audiowide, sans-serif; ">
+<body class="linerBackgroundColor" style="font-family: Audiowide, sans-serif; ">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1200 });
+    </script>
+    <!-- FIXME:  -->
+
     <header>
-        <nav class="navbar navbar-expand-lg linerColor">
+        <!-- FIXME:  nav bar -->
+        <nav class="navbar navbar-expand-lg linerBackgroundColor">
             <div class="container-fluid ">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -38,18 +45,23 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-center ">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 h-100 justify-content-center">
                         <li class="nav-item hoverSacle">
-                            <a class="nav-link" aria-current="page" href="#aboutMe">About Me</a>
+                            <a class="nav-link" aria-current="page" href="#aboutMe"><span
+                                    style="font-size:1.3rem ;color: aliceblue;">About Me</span> </a>
                         </li>
                         <li class="nav-item hoverSacle">
-                            <a class="nav-link" href="#mySkills">My Skills</a>
+                            <a class="nav-link" href="#mySkills"><span style="font-size:1.3rem ;color: aliceblue;">My
+                                    Skills</span></a>
                         </li>
                         <li class="nav-item hoverSacle">
-                            <a class="nav-link " href="#myProject">My Project</a>
+                            <a class="nav-link " href="#myProject"><span style="font-size:1.3rem ; color: aliceblue;">My
+                                    Project</span></a>
                         </li>
                         <li class="nav-item hoverSacle">
-                            <a class="nav-link " href="#contactMe">Contact Me</a>
+                            <a class="nav-link " href="#contactMe"><span
+                                    style="font-size:1.3rem ;color: aliceblue;">Contact
+                                    Me</span></a>
                         </li>
                     </ul>
                 </div>
@@ -60,11 +72,14 @@
     <main>
         <div class="container mh-100 bg-black" id="home" style="color: aliceblue; ">
             <div class="row row-cols-auto ">
-                <div class="col-lg-12 col-md-12 text-center" style="margin-top:10rem;">
+                <div class="col-lg-12 col-md-12 text-center" style="margin-top:5rem;">
                     <span class="h1">Hi, my name is <span class="neonText"> <span class="hoverSacle">K</span><span
                                 class="hoverSacle">h</span><span class="hoverSacle">a</span><span
                                 class="hoverSacle">l</span><span class="hoverSacle">i</span><span
-                                class="hoverSacle">d</span> Al-Karmi </span></span>
+                                class="hoverSacle">d</span> <span class="hoverSacle">A</span><span
+                                class="hoverSacle">l-</span><span class="hoverSacle">K</span><span
+                                class="hoverSacle">a</span><span class="hoverSacle">r</span><span
+                                class="hoverSacle">m</span><span class="hoverSacle">i</span>
                 </div>
             </div>
             <div class="row ">
@@ -91,10 +106,11 @@
             <div class="row row-cols-auto">
                 <div class="col-lg-12 m-lg-4 m-sm-0 col-md-12 col-sm-12 text-center "><span class="h3 "> About Me
                     </span></div>
-                <div class="col-lg-6 col-md-12 col-sm-12 "> <img class="img-fluid " src="./images/programmer.png"
+                <div class="col-lg-4 col-md-12 col-sm-12 "> <img class="img-fluid ms-sm-5" src="./images/programmer.png"
                         alt=""></div>
-                <div class="col-lg-6 col-md-12 col-sm-12" style="padding-top:5rem;">
-                    <p class="h5 w-50 m-sm-0 " style="margin-left: 5rem;">Hello! My name is Khalid and I'm a web
+                <div class="col-lg-8 col-md-12 col-sm-12" style="padding-top:1rem;">
+                    <p class="h5 w-50 m-sm-0 justify-content-sm-center mx-md-auto" style="margin-left: 5rem;">Hello! My
+                        name is Khalid and I'm a web
                         and
                         Android apps developer.
                         I started my journey back in 2014 with Microcontroller and embedded systems in c/c++, then moved
@@ -121,88 +137,86 @@
         </div>
         <div class="br-50"></div>
 
-        <div class="container text-center bg-black " id="mySkills" style="color: aliceblue;">
+        <div class="container  bg-black " id="mySkills" style="color: aliceblue;">
             <div class="row row-cols-auto">
-                <div class="col-lg-12 col-md-12 col-sm-12 mt-4">
+                <div class="col-lg-12 col-md-12 col-sm-12 mt-4 text-center">
                     <span class="h3 "> My Skills
                     </span>
                 </div>
-
-                <div class="col-lg-6 col-md-6 col-sm-12 p-lg-5 text-start">
-                    <div class="col-12 text-lg-start text-md-center text-sm-center mt-sm-3 mb-sm-2">Back-end</div>
-                    <p class="h6"> I am well-versed in Spring Boot Framework, building Full-REST
-                        api servers, design patterns [MVC] and OOP, server architecture, working with non-relational
-                        databases
-                        such as MongoDB and Firebase, using
-                        Docker as a deployment system. <br>
-                        Good knowledged in Linux OS and familiar with Ubuntu servers.<br>
-                    </p>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 p-lg-5 text-start">
-                    <div class="col-12 text-lg-start text-md-center text-sm-center mt-sm-3 mb-sm-2">Front-end</div>
-                    <p class="h6 ">I have strong knowledged in Kotlin for native android development, design
-                        pattern such as [MVVM, MVC], REST client library like Retrofit. <br>
-                        Good knowledged in HTML\CSS, Bootstrap 5 and react.
-                    </p>
-                </div>
-                <div class="col-12 mt-sm-3 mb-sm-2 ">
-                    <p class="text-center">
-                        Soft Skills <br>
-                    </p>
-                    <ul class="list-group-item">
-                        <li class="list-group-item">Good communication skills</li>
-                        <li class="list-group-item">Strong searching skills</li>
-                        <li class="list-group-item">Self taught</li>
-                        <li class="list-group-item">Good timing management</li>
-                        <li class="list-group-item">Team Work</li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-12  col-sm-12 p-5">
-                    <div class="card " style="width: 18rem;  background-color: #6e83b7;">
-                        <div class="card-body ">
-                            <h5 class="card-title">Spring Boot</h5>
-                            <h6 class="card-subtitle mb-2 text-muted neonText">Back-end</h6>
+                <div class="col-lg-6 col-md-12  col-sm-12 p-5 ">
+                    <div class="card mx-sm-auto justify-content-sm-center" style=" background-color: #6e83b7;">
+                        <div class="card-body">
+                            <h5 class="card-title neonText">Back-end</h5>
                             <p class="card-text">
-                                I work with Spring Boot to create high-end Full-REST API servers.
+                            <ul>
+                                <li>Spring Boot Framework</li>
+                                <li>REST-FULL API</li>
+                                <li>design patterns [MVC] and OOP</li>
+                                <li>Linux OS</li>
+                            </ul>
+                            <ul class="iconLOGO ">
+                                <li><img src="./images/vertical-logo-monochromatic.webp" alt="" style="width: 50px;"></li>
+                                <li><img src="./images/spring.svg" alt="" style="width: 50px;"></li>
+                                <li><img src="./images/mongodb_plain_wordmark_logo_icon_146423.png" alt=""
+                                        style="width: 50px;"></li>
+                                <li><img src="./images/Firebase-Logo-free-png.png" alt="" style="width: 50px;"></li>
+                                <li><img src="./images/kisspng-ubuntu-canonical-linux-debian-software-vector-5b070c0ff41564.2036755515271884959998.png"
+                                        alt="" style="width: 50px;"></li>
+                            </ul>
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12  col-sm-12  p-5">
-                    <div class="card " style="width: 18rem;  background-color: #6e83b7;">
+                <div class="col-lg-6 col-md-12 col-sm-12 p-5">
+                    <div class="card mx-sm-auto justify-content-sm-center" style="background-color: #6e83b7;">
                         <div class="card-body">
-                            <h5 class="card-title">Android</h5>
-                            <h6 class="card-subtitle mb-2 text-muted neonText">Full-stack</h6>
+                            <h5 class="card-title neonText">Front-end</h5>
                             <p class="card-text">
-                                I use a variety of Android technologies to ensure the app meets all requirements.
+                            <ul>
+                                <li>Android [Kotlin]</li>
+                                <li>HTML\CSS</li>
+                                <li>Bootstrap 5</li>
+                                <li>React</li>
+                            </ul>
+                            <ul class="iconLOGO pt-3 ">
+                                <li><img src="./images/Bootstrap_logo.svg.png" alt="" style="width: 55px;"></li>
+                                <li><img src="./images/android-logo-502631.png" alt="" style="width: 55px;"></li>
+                                <li><img src="./images/Git-Icon-1788C.png" alt="" style="width: 55px;"></li>
+                                <li><img src="./images/React-icon.svg.png" alt="" style="width: 55px;"></li>
+                            </ul>
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-12 p-5">
-                    <div class="card " style="width: 18rem;  background-color: #6e83b7;">
+                <div class="col-lg-6 col-md-12 col-sm-12 p-5">
+                    <div class="card mx-sm-auto justify-content-sm-center" style="background-color: #6e83b7; ">
                         <div class="card-body">
-                            <h5 class="card-title">React</h5>
-                            <h6 class="card-subtitle mb-2 text-muted neonText">Front-end</h6>
-                            <p class="card-text">I work with certain design tools to create high-fidelity designs and
-                                prototypes.</p>
+                            <h5 class="card-title neonText">Soft Skills</h5>
+                            <p class="card-text">
+                            <ul>
+                                <li>Good communication skills</li>
+                                <li>Strong searching skills</li>
+                                <li>Self taught</li>
+                                <li>Good timing management</li>
+                                <li>Team Work</li>
+                            </ul>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
         <div class="br-50"></div>
         <div class="hr">
             <hr>
         </div>
         <div class="br-50"></div>
-
+        <!-- TODO: data-aos="fade-right" -->
         <div class="container  bg-black" id="myProject" style="color: aliceblue;">
             <div class="row row-cols-auto">
                 <div class="col-lg-12 m-4 col-md-12 col-sm-12 text-center"><span class="h3"> My Project
                     </span></div>
-                <div class="col-lg-3 col-md-12 col-sm-12 m-lg-5 m-sm-0">
+                <div class="col-lg-3 col-md-12 col-sm-12 m-lg-5 m-sm-0 hoverSacle">
                     <div class="card mb-3 " style="max-width: 540px; background-color: #6e83b7;">
                         <div class="row g-0">
                             <div class="col-md-4 col-sm-4">
@@ -215,13 +229,13 @@
                                         Uni-Drive is an Android based ride-sharing application.</p>
                                     <p class="card-text"><small class="text-dark">Last updated 1 month ago</small></p>
                                     <a href="https://github.com/khalledalkarmi/StudentDelivery" target="_blank"
-                                        class="btn  buttonHover">GitHub</a>
+                                        class="btn  buttonHover"> GitHub</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-12 col-sm-12 m-lg-5 m-sm-0">
+                <div class="col-lg-3 col-md-12 col-sm-12 m-lg-5 m-sm-0 hoverSacle">
                     <div class="card mb-3" style="max-width: 540px;  background-color: #6e83b7;">
                         <div class="row g-0">
                             <div class="col-md-4 col-sm-4">
@@ -243,7 +257,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-12 col-sm-12 m-lg-5 m-sm-0">
+                <div class="col-lg-3 col-md-12 col-sm-12 m-lg-5 m-sm-0 hoverSacle  ">
                     <div class="card mb-3" style="max-width: 540px;  background-color: #6e83b7;">
                         <div class="row g-0">
                             <div class="col-md-4 col-sm-4">
@@ -270,20 +284,21 @@
         </div>
         <div class="br-50"></div>
         <div class="container text-center bg-black" id="contactMe" style="color: aliceblue;">
-            <div class="row row-cols-auto pb-5">
+            <div class="row row-cols-auto ">
                 <div class="col-lg-12 col-md-12 col-sm-12 mb-sm-3 m-4"><span class="h3"> Get In Touch
                     </span></div>
                 <div class="col-lg-12 col-md-12 col-sm-12 mt-1 mb-sm-3 mb-lg-5">
                     Although I’m currently looking for any new opportunities.
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 mb-sm-3"><a target="_blank"
-                        href="https://github.com/khalledalkarmi"><img class="bg-light" src="./images/github (1).png"
-                            style="width: 60px; border-radius: 100%;" alt=""></a></div>
+                        href="https://github.com/khalledalkarmi"><img class="bg-light boxLight"
+                            src="./images/github (1).png" style="width: 60px; border-radius: 100%;" alt=""></a></div>
                 <div class="col-lg-4 col-md-4 col-sm-12 mb-sm-3"><a target="_blank"
-                        href="https://www.linkedin.com/in/khalled-alkarmi/"><img class="bg-light"
+                        href="https://www.linkedin.com/in/khalled-alkarmi/"><img class="bg-light boxLight"
                             src="./images/linkedin-logo.png" style="width: 60px; border-radius: 100%;" alt=""></a></div>
-                <div class="col-lg-4 col-md-4 col-sm-12 mb-sm-3"><a target="_blank" href=""><img class="bg-light"
-                            src="./images/whatsapp.png" style="width: 60px; border-radius: 100%;" alt=""></a></div>
+                <div class="col-lg-4 col-md-4 col-sm-12 mb-sm-3 "><a target="_blank" href=""><img
+                            class="bg-light boxLight" src="./images/whatsapp.png"
+                            style="width: 60px; border-radius: 100%;" alt=""></a></div>
             </div>
         </div>
     </main>
