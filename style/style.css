@@ -45,16 +45,8 @@ nav li {
 }
 
 .neonText {
+    animation: flicker 1.5s infinite alternate;
     color: #fff;
-    text-shadow:
-        0 0 7px rgb(130, 191, 248),
-        0 0 10px #fff,
-        0 0 21px rgb(0, 38, 255),
-        0 0 42px rgb(0, 68, 255),
-        0 0 82px rgb(0, 68, 255),
-        0 0 92px rgb(0, 68, 255),
-        0 0 102px rgb(0, 68, 255),
-        0 0 151px rgb(0, 68, 255);
 }
 
 .buttonHover {
@@ -84,6 +76,23 @@ nav li {
         0 0 102px rgb(0, 255, 98),
         0 0 151px rgb(0, 255, 38)
 }
+
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      text-shadow:
+      0 0 7px rgb(68, 171, 255),
+      0 0 10px rgb(255, 68, 255),
+      0 0 21px rgb(0, 68, 255),
+      0 0 42px rgb(0, 68, 255),
+      0 0 82px rgb(0, 68, 255),
+      0 0 92px rgb(0, 68, 255),
+      0 0 102px rgb(0, 68, 255),
+      0 0 151px rgb(0, 68, 255)
+    }
+    20%, 24%, 55% {       
+      text-shadow: none;
+    }
+  }
 
 .hoverSacle {
     transition: all .2s ease-in-out;
@@ -124,4 +133,11 @@ nav li {
         0 0 102px rgb(0, 68, 255),
         0 0 102px rgb(0, 68, 255),
         0 0 151px rgb(0, 68, 255);
+}
+
+@media screen and (max-width: 480px) {
+    .smallImage {
+        width: 20%;
+    }
+
 }
